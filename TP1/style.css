@@ -1,0 +1,62 @@
+body {
+    background-color: #7bdbf3;
+}
+
+.nav {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: end;
+}
+
+.nav .add {
+    background-color: #9ec962;
+    cursor: pointer;
+}
+
+.nav .add :hover {
+    background-color: red;
+    color: black;
+}
+
+.nav span {
+    color: white;
+}
+
+.nav i {
+    color: white;
+    font-weight: bolder;
+}
+
+.headd {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.table {
+    margin-top: 5%;
+    margin-left: 3px;
+}
+
+.barre {
+    height: 35vh;
+    margin: 2%;
+}
+
+.menu {
+    background-color: #9ec962;
+    display: flex;
+    justify-content: end;
+}
+
+.menu i {
+    cursor: pointer;
+    margin: 5%;
+    color: white;
+}
+
+#note {
+    display: flex;
+    height: 82%;
+}

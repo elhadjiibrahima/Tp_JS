@@ -1,0 +1,73 @@
+body{
+
+   display: flex;
+   justify-content: center;
+   margin-top: 5%;
+}
+.conteneur{
+    /* border: solid white; */
+    width: 50%;
+    height: 80vh;
+    border-radius: 15px;
+    background-color: rgb(99, 51, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conte{
+    background-color:indigo ;
+    width: 95%;
+    height: 95%;
+    
+}
+.conte .motdepasse{
+    display: flex;
+    justify-content: center;
+    
+}
+.conte .motdepasse textarea{
+    background-color: rgb(78, 29, 109);
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.conte .contenu{
+    height: 65%;
+    color: white;
+    
+}
+.conte .contenu .texte{
+    height: 12%;
+    font-weight: bolder;
+    font-size: 1rem;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+
+}
+.conte .contenu .texte .input{
+    border: solid white;
+    width: 30px;
+    height: 20px;
+}
+.conte .btn{
+   height: 15%;
+   margin-top: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.conte .btn .generer{
+    height: 95%;
+    width: 95%;
+    background-color: yellow;
+    color: indigo;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+}
