@@ -5,41 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="myScript.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/e58fb38aa2.js" crossorigin="anonymous"></script>
-
 </head>
 <body>
-    <div class="conteneur">
-        <div class="conte">
-            <div class="motdepasse"> <textarea name="motdepasse" id="motdepasse" cols="73" rows="5"></textarea>  </div>
-            <div class="contenu"> 
-                <div class="texte"> 
-
-                    <div><span>Longueur Du Password</span> </div> 
-                    <input type="text" name="taille" id="taile" class="input">  
-                </div>
-                <div class="texte"> 
-                    <span>Contient des lettres Majuscule</span>  
-                    <input type="checkbox" name="taille" id="taile">     
-                </div>
-                <div class="texte"> 
-                    <span>Contient des lettres minuscule</span>  
-                    <input type="checkbox" name="taille" id="taile">     
-                </div>
-                <div class="texte"> 
-                    <span>Contient des nombre</span>  
-                    <input type="checkbox" name="taille" id="taile">     
-                </div>
-                <div class="texte"> 
-                    <span>Contient des caracteres speciaux</span>  
-                    <input type="checkbox" name="taille" id="taile">     
-                </div>
-            
+    <div class="container">
+        <div id="password-generator">
+            <input type="text" style="color: white;" value="Generateur de mot de passe" id="password-output">
+           <button type="button"  onclick="copieur()" id="butt" class="butt">Copy</button>
+            <div class="range">
+                <label for="display-p-length">Longueur mot de passe</label>
+                <input style="width: 30px; " value="8" type="text" id="display-p-length" maxlength="2"  >
             </div>
-            <div class="btn"> 
-                <div class="generer"> Generer Le Mot De Passe</div>
-                 </div>
+            <div class="flex">
+                <div class="inp">
+
+                    <label for="lowercase">Contient des lettres Minuscules</label>
+                    <input type="checkbox"  id="lowercase" checked="checked" >
+                </div>
+                <div class="inp">
+                    <label for="uppercase">Contient des lettres Majuscules</label>
+                    <input type="checkbox" id="uppercase">
+                </div>
+                <div class="inp">
+                    <label for="numbers">Contient des nombres</label>
+                    <input type="checkbox" id="numbers">
+                </div>
+                <div class="inp">
+                    <label for="symbols">Contient des Caracteres Speciaux</label>
+                    <input type="checkbox" id="symbols">
+                </div>
+               <div class="boutton">
+                   <button id="generateButton" type="button" onclick="generatePassword()">Generer le Mot de Passe</button>
+                </div>
+
+            </div>
         </div>
     </div>
 </body>

@@ -1,73 +1,88 @@
 body{
-
-   display: flex;
-   justify-content: center;
-   margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.conteneur{
-    /* border: solid white; */
-    width: 50%;
-    height: 80vh;
-    border-radius: 15px;
+
+.container{
+    width: 60%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(99, 51, 151);
+}
+#password-generator{
+    height: 85vh;
+    width: 90%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    background-color: rgb(46, 12, 80);
+    align-items: center;     
 }
-.conte{
-    background-color:indigo ;
-    width: 95%;
-    height: 95%;
-    
+#password-generator .butt{
+    background-color: white;
+    visibility: hidden;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-left: 440px;
 }
-.conte .motdepasse{
-    display: flex;
-    justify-content: center;
-    
-}
-.conte .motdepasse textarea{
+#password-output{
+    margin-top: 5%;
+    width: 70%;
+    height: 75px;
+    font-size: 1.5rem;
+    font-weight: bold;
     background-color: rgb(78, 29, 109);
-    cursor: pointer;
-    color: white;
-    font-size: 1rem;
-    font-weight: bolder;
 }
-.conte .contenu{
-    height: 65%;
+.range{
+    margin-top: 2%;
+    width: 80%;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
     color: white;
     
 }
-.conte .contenu .texte{
-    height: 12%;
-    font-weight: bolder;
-    font-size: 1rem;
+.flex{
     display: flex;
-    padding-top: 20px;
+    flex-direction: column;
+    margin-top: 4%;
+    height: 60vh;
+    width: 80%;
+    
+}
+.inp{
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-
-}
-.conte .contenu .texte .input{
-    border: solid white;
-    width: 30px;
-    height: 20px;
-}
-.conte .btn{
-   height: 15%;
-   margin-top: 5px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.conte .btn .generer{
-    height: 95%;
-    width: 95%;
-    background-color: yellow;
-    color: indigo;
-    text-align: center;
     font-size: 2rem;
-    font-weight: bolder;
+    font-weight: bold;
+    color: white;
+}
+.boutton{
+    width: 100%;
+    margin-top: 5%;
+    height: 50px;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    /* visibility: hidden; */
+    
+}
+.boutton button{
+    border: blueviolet;
+    width: 100%;
+    font-size: 1.5rem;
+    /* visibility: hidden; */
     cursor: pointer;
-    border-radius: 20px;
+    font-weight: bolder;
+    color: blueviolet;
+    background-color: yellow;
 }

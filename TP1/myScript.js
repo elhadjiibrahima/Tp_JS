@@ -1,26 +1,3 @@
-//Fonction pour delete
-//function remove(idRemove) {
-//     elementToRemove = document.getElementById(idRemove);
-//     parentOfElement = elementToRemove.parentNode;
-//     OfElement.removechild(elementToRemove)
-
-
-/*  <div class="headd">
-            <div class="table">
-                <div class="barre">
-                    <div class="menu">
-                        <i class="fa-regular fa-pen-to-square" id="edit"></i>
-                        <i class="fa-regular fa-trash-can" id="delet"></i>
-                    </div>
-                    <!-- <div class="note"> -->
-                    <textarea name="note" id="texte"></textarea>
-                    <!-- </div> -->
-                </div>
-            </div>
-
-        </div>
-    </div>
- */
 function noteAlgo() {
     const add = document.getElementById('add');
     add.addEventListener('click', function() {
@@ -58,27 +35,7 @@ function noteAlgo() {
         edit.addEventListener('click', function() {
             texte.toggleAttribute('disabled')
             texte.focus()
-
-            /* if (texte.disabled == true) {
-                texte.disabled = false
-            } else {
-                texte.disabled = true
-            } */
-
         })
-
-
-
     })
-
-
-
-
-
-
-
-
-
-
 }
 noteAlgo();
