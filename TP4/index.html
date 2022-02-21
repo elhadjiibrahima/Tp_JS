@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP4</title>
+    <title>Tp4</title>
     <link rel="stylesheet" href="style.css">
+    <script src="myScript.js" defer></script>
 </head>
 <body>
-    <div class="conteneur">
-        <div class="question"><h1>Quel est le meilleur langage de <br> progamation en 2022 ?</h1></div>
-        <div class="rep">
-            <div class="reponse">
-                <input type="checkbox"> <span>Java</span>
-            </div>
-            <div class="reponse">
-                <input type="checkbox"> <span>C</span>
-            </div>
-            <div class="reponse">
-                <input type="checkbox"> <span>Python</span>
-            </div>
-            <div class="reponse">
-                <input type="checkbox"> <span>JavaScript</span>
-            </div>
-          
-        </div>
-        <div class="suivant"> <h1>Suivant</h1></div>
-    </div>
+    <div class="contener" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">QUESTION</h2>
+            <ul>
+              <li>
+                  <input type="radio" name="answer" id="a" class="answer">
+                  <label for="a" id="a-text">Reponse</label>
+              </li>  
 
+              <li>
+                <input type="radio" name="answer" id="b" class="answer">
+                <label for="b" id="b-text">Reponse</label>
+            </li>  
+
+            <li>
+                <input type="radio" name="answer" id="c" class="answer">
+                <label for="c" id="c-text">Reponse</label>
+            </li>  
+
+            <li>
+                <input type="radio" name="answer" id="d" class="answer">
+                <label for="d" id="d-text">Reponse</label>
+            </li>  
+            </ul>
+        </div>
+        <button id="submit"> SUIVANT </button>
+    </div> 
 </body>
 </html>
