@@ -17,46 +17,33 @@ const quizData=[
     },
     
     {
-        question:'Qui est le plus bavard de la classe ?',
-        a:'traore',
-        b:'ahmed ',
-        c:'der',
-        d:'wads',
+        question:'Qui est meilleur buteur du can 2022 ?',
+        a:'vincent aboubacar',
+        b:'sadio mane',
+        c:'mendy',
+        d:'salah',
         correct:'a',
     },
+    {
+        question:'Quel joueur a joue 90 minutes sans toucher le ballon ?',
+        a:'Giroud',
+        b:'martial',
+        c:'Aaron Svesve',
+        d:'demba ly',
+        correct:'c',
+    },
+
+
    
     {
-        question:'kane mo doul def veille si classe bi ?',
-        a:'birame',
-        b:'ahmed dame ',
-        c:'rawane',
-        d:'ibrahima',
-        correct:'b',
-    },
-    {
-        question:'kane mo doul nelaw si classe bi ?',
-        a:'adama ndiaye',
-        b:'mor diouf ',
-        c:'rawane',
-        d:'souleymane diallo',
-        correct:'d',
-    },
-    {
-        question:'kane mo dak nelaw ?',
-        a:'birame',
-        b:'adama ndiaye ',
-        c:'rawane',
-        d:'ibrahima',
-        correct:'b',
-    },
-    {
-        question:'kane moy kagn kat classe bi ?',
-        a:'birame',
-        b:'traore ',
-        c:'der',
-        d:'yusupha',
+        question:"Qui est la premiere personne dans l'espace ?",
+        a:'Youri Gagarine',
+        b:'Neil Armstrong ',
+        c:'Michael Collins',
+        d:'Buzz Aldrin',
         correct:'a',
     },
+    
 ]
 const quiz=document.getElementById('quiz');
 const answerE1s=document.querySelectorAll('.answer')
@@ -105,7 +92,7 @@ submitBnt.addEventListener('click', () => {
            loadQuiz()
        }
        else{
-           quiz.innerHTML=`<h2>vous avez trouve ${score}/${quizData.length}des question</h2>
+           quiz.innerHTML=`<h2>vous avez trouve ${score}/${quizData.length} des question</h2>
            <button onclick="location.reload()">Reprendre</button>
            ` ;      
        }
