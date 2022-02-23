@@ -38,22 +38,28 @@ p4.innerText=tab[3];
 const mesparagraphe=document.querySelectorAll('p');
 
 function deplace() {
-    for (let para = 0; para < mesparagraphe.length; para++) {
-    mesparagraphe[para].addEventListener('click', function() {
-        mesparagraphe[para].classList.toggle("actived")
+    mesparagraphe.forEach(para=>{
+    para.addEventListener('click', function() {
+        para.classList.toggle("actived")
         /*------------------------//transfert des paragraphe--------------------*/
     })
-    buton1.addEventListener('click', function() {
-        const seleted = document.querySelector('.actived')
-        conte2.appendChild(seleted);
+   
+})
+buton1.addEventListener('click', function() {
+let btnmouve1=document.querySelectorAll('#aa .actived')
+btnmouve1.forEach(theP=>{
+    conte2.appendChild(theP)
+    theP.setAttribute('class','texte')
+   })
+});
+buton2.addEventListener('click', function() {
+    let btnmouve2=document.querySelectorAll('#b .actived')
+    btnmouve2.forEach(theP=>{
+        conte1.appendChild(theP)
+        theP.setAttribute('class','texte')
     })
-    buton2.addEventListener('click',function(){
-        const seleted = document.querySelector('.actived')
-         conte1.appendChild(seleted);
-    })
+} )
 
-    
-
-    } 
 }
+
 deplace()
